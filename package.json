@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive Portofolio Website",
   "main": "index.js",
+  "homepage": "https://gui37.github.io/Portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy":"gh-pages -d dist"
   },
   "author": "Gui37",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0"
   }
 }
