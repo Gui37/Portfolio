@@ -5,7 +5,7 @@ $home-image: url(../img/computer.jpg);
 $background-opacity: 0.5;
 
 @mixin easeOut{
-    transition: all 1.0s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @mixin background{
@@ -26,5 +26,28 @@ $background-opacity: 0.5;
                 background: rgba($primary-color, $background-opacity);
             }
         }
+    }
+}
+
+// media Query Mixins
+
+@mixin mediaSm{
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin mediaMd{
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mediaLg{
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+@mixin mediaXl{
+    @media screen and (min-width: 1171px) {
+        @content;
     }
 }
