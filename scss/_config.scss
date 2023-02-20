@@ -4,6 +4,9 @@ $show-home-image:true;
 $home-image: url(../img/computer.jpg);
 $background-opacity: 0.5;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
 @mixin easeOut{
     transition: all 0.5s ease-out;
 }
