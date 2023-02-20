@@ -90,6 +90,7 @@
             width: 220px;
             height: 220px;
             background: url('../img/portrait.jpg') no-repeat;
+            background-size: contain;
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
